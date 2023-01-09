@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  background: rgb(235, 235, 235);
+  color: rgb(102, 102, 102);
+  min-height: 100vh;
+}
+
+.drag-and-drop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 200px;
+  border: 3px dotted rgb(73, 73, 73);
+  border-radius: 10px;
+  background-color: rgb(212, 212, 212);
+}
+
+.active {
+  border-color: #4f4fa8;
+  background-color: #d4d4f0;
+}
+
+.images-list {
+  display: flex;
+  width: 500px;
+  margin-top: 10px;
+}
+
+#upload-btn {
+  font-size: 20px;
+  background-color: #d4d4f0;
+  border-radius: 8px;
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+
+.files-list {
+  list-style: none;
+}
