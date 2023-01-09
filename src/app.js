@@ -5,7 +5,8 @@ const filesList = [];
 const arrayOfObjects = [];
 
 let uploadBtn = document.getElementById("upload-btn");
-let p;
+let list = document.querySelector("ul");
+console.log(list);
 
 dradAndDrop.addEventListener("dragenter", function (e) {
   e.preventDefault();
@@ -38,7 +39,7 @@ dradAndDrop.addEventListener("drop", function (e) {
       li = document.createElement("li");
       li.className = "files-list";
       li.innerHTML = `${files[key].name}`;
-      document.body.append(li);
+      list.append(li);
     }
   }
   console.log(filesList);
