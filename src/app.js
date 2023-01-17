@@ -4,9 +4,9 @@ console.log(dradAndDrop);
 const filesList = [];
 const arrayOfObjects = [];
 
-let uploadBtn = document.getElementById("upload-btn");
-let list = document.querySelector("ul");
-console.log(list);
+const uploadBtn = document.getElementById("upload-btn");
+const list = document.querySelector("ul");
+let li;
 
 dradAndDrop.addEventListener("dragenter", function (e) {
   e.preventDefault();
